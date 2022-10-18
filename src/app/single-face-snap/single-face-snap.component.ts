@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.models';
 import { FaceSnapsService } from '../services/face-snaps-servive';
 import{ActivatedRoute} from '@angular/router'
@@ -8,7 +8,7 @@ import{ActivatedRoute} from '@angular/router'
   styleUrls: ['./single-face-snap.component.scss']
 })
 export class SingleFaceSnapComponent implements OnInit {
-  @Input() faceSnap! : FaceSnap;
+ faceSnap! : FaceSnap;
   buttonText!:string;
 
 
